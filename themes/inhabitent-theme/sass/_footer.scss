@@ -1,0 +1,21 @@
+footer {
+    height: 350px;
+    background-color: lightcyan;
+    padding: 50px 50px 50px 50px;
+}
+
+.container {
+    display: flex;
+    
+    .contact-info {
+        width: 30%
+    }
+
+    .business-hours {
+        width: 30%;
+    }
+
+    .footer-logo {
+        width: 40%;
+    }
+}
