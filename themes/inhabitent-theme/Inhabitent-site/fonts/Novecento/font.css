@@ -1,0 +1,19 @@
+@font-face {
+  font-family: '';
+  src: ,
+       ,
+       ,
+       ;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Novecentosanswide-Normal';
+  src: url('Novecentosanswide-Normal.eot');
+  src: url('Novecentosanswide-Normal.woff2') format('woff2'),
+       url('Novecentosanswide-Normal.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

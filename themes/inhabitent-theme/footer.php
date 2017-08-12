@@ -20,7 +20,7 @@
                         <p>
                             <i class="fa fa-phone icon" aria-hidden="true"></i>
                             <a href="tel:778-456-7891">778-456-7891</a>
-						<p class="footer-logos">
+						<p class="footer-social-media">
                             <span>
                                 <a href="#"><i class="fa fa-facebook-square icon" aria-hidden="true"></i></a>
                             </span>
@@ -46,7 +46,7 @@
 				</div>
 
 					<div class="copyright">
-						Copyright <?php echo date('Y'); ?> Inhabitent
+						Copyright © <?php echo date('Y'); ?> Inhabitent
 					</div>
 
 			</footer><!-- #colophon -->
