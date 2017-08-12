@@ -25,7 +25,7 @@ add_filter( 'body_class', 'red_starter_body_classes' );
 function inhabitent_login_logo() { ?> 
     <style type="text/css">
         #login h1 a, .login h1 a {
-        background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/inhabitent-site/images//logos/inhabitent-logo-text-dark.svg);
+        background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/inhabitent-site/images/logos/inhabitent-logo-text-dark.svg);
 		height:100px;
 		width:320px;
 		background-size: 320px 100px;
@@ -44,3 +44,5 @@ function inhabitent_login_title() {
 	return 'Inhabitent';
 }
 add_filter('login_headertitle', 'inhabitent_login_title');
+
+//Remove theme and plugin editors in this folder
