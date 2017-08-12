@@ -1,7 +1,7 @@
 <?php
 /**
  * The sidebar containing the main widget area.s
- *
+ * Template Name: Right Sidebar
  * @package RED_Starter_Theme
  */
 

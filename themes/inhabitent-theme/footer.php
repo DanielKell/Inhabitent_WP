@@ -46,7 +46,7 @@
 				</div>
 
 					<div class="copyright">
-						Copyright 2017 Inhabitent
+						Copyright <?php echo date('Y'); ?> Inhabitent
 					</div>
 
 			</footer><!-- #colophon -->

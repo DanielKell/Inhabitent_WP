@@ -231,10 +231,10 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.75rem; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -654,8 +654,8 @@ object {
 
 footer {
   height: 350px;
-  background-color: black;
-  padding: 50px 50px 50px 50px; }
+  padding: 50px 50px 50px 50px;
+  background-image: url("../../Inhabitent-site/images/dark-wood.png"); }
 
 h3 {
   color: #d99054; }
