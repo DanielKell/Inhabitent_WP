@@ -6,12 +6,20 @@
 
 .blog {
     #primary {
-        background-color: magenta
+        background-color: lightblue;
     }
     .footer {
 
     }
     .class-blog {
-        
+
     }
+}
+
+.content-area {
+    width: 70%;
+}
+
+.site-content {
+    display: flex;
 }

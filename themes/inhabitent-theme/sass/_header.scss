@@ -1,0 +1,82 @@
+.site-header {
+    background-color: hsla(0, 0%, 100%, .6);
+    text-transform: uppercase;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home {
+    #primary-menu {
+        li {
+            &:hover>a,
+            &:focus>a {
+                color: #f0e4d1;
+            }
+        }
+    }
+}
+
+.menu {
+    li a {
+        font-family: $font__accent;
+        text-transform: uppercase;
+        color: $green-brand-color;
+        font-size: 16px;
+        font-weight: 400;
+        &:hover {
+            color: $orange_brand_color;
+        }
+    }
+}
+
+.site-branding {
+    background-image: url("../../Inhabitent-site/images/logos/inhabitent-logo-tent.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    z-index: 999;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.fa-search {
+    z-index: 20;
+    height: 5px;
+    color: $green-brand-color;
+}
+
+#primary-menu {
+    display: flex;
+    width: 390px;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.main-navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    position: fixed;
+    background-color: hsla(0, 0%, 100%, .85);
+    z-index: 5;
+    align-items: center;
+}
+
+.menu-container {
+    display: flex;
+}
+
+.fa-search {
+    margin-right: 40px;
+}
