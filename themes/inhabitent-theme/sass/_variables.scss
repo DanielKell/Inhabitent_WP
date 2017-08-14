@@ -1,10 +1,10 @@
 // Structure
 
-$base__space-unit: 1.5rem;
+$base__space-unit: .15rem;
 $base__width: 1120px;
 $base__border-dashed: 1px dashed #c8c8c8 ;
 $base__border-solid: 1px solid #e1e1e1 ;
-$base__spacing: 1.5rem;
+$base__spacing: .15rem;
 
 // Colors
 
@@ -33,7 +33,7 @@ $medium_grey_brand_color: #808080;
 
 // Typography
 
-$font__main: 'Merriweather-Bold', sans-serif;
+$font__main: 'Merriweather-Light', sans-serif;
 $font__accent: 'Novecentosanswide-Normal', sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;

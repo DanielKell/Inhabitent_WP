@@ -46,7 +46,6 @@
     width: 50px;
     z-index: 999;
     margin-left: 20px;
-    margin-top: 20px;
 }
 
 .fa-search {
@@ -65,7 +64,7 @@
 .main-navigation {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 50px;
     position: fixed;
     background-color: hsla(0, 0%, 100%, .85);

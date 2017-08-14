@@ -10,3 +10,21 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+@mixin green-button {
+	color: white;
+	font-size: .10rem;
+	padding: .50rem 1rem;
+	background: $green_brand_color;
+	text-align: center;
+	margin: 1rem 0 .5rem 0;
+
+	 :hover {
+		border-color: $orange_brand_color;
+	}
+	a {
+		color: white;
+		font-family: $font__accent;
+		text-decoration: none;
+	}
+}

@@ -213,3 +213,17 @@ td,
 th {
 	padding: 0;
 }
+
+//MOVE THESE THINGS LATER; JUST FOR SETUP!
+
+h1, h2, h3, h4, h5, h6 {
+    //clear: both;
+	text-transform: uppercase;
+    letter-spacing: $base__spacing;
+    font-family: $font__accent;
+    color: $color__text-main;
+}
+
+.site-content {
+	padding: 60px 60px 60px 60px;
+}

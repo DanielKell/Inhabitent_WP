@@ -1,17 +1,18 @@
 footer {
-    height: 350px; //background-color: black;
+    height: 325px; 
     padding: 40px 100px 40px 100px;
     background-image: url('../../Inhabitent-site/images/dark-wood.png');
     .copyright {
         display: flex;
         justify-content: center;
+        padding-top: 20px;
         color: white;
         text-transform: uppercase;
-        font-family: $font__accent; //Why doesn't this work!?
+        font-family: $font__accent; 
     }
     p {
         color: white;
-        font-family: $font__main; //Why doesn't this work?
+        font-family: $font__main; 
     }
     a {
         text-decoration: none;
@@ -40,6 +41,10 @@ h3 {
     }
     .business-hours {
         width: 25%;
+
+        p span {
+            font-family: 'Merriweather-Bold';
+        }
     }
     .footer-logo {
         width: 50%;
