@@ -8,11 +8,15 @@
 // Register Custom Post Type
 function inhabitent_cpt_product() {
 
+	$slug = 'product';
+	$name = 'Products';
+	$singular_name = 'Product';
+
 	$labels = array(
-		'name'                  => 'Products',
-		'singular_name'         => 'Product',
+		'name'                  => $name,
+		'singular_name'         => $singular_name,
 		'menu_name'             => 'Products',
-		'name_admin_bar'        => 'Product',
+		'name_admin_bar'        => $singular_name,
 		'archives'              => 'Product Archives',
 		'attributes'            => 'Product Attributes',
 		'parent_item_colon'     => 'Parent Product:',
