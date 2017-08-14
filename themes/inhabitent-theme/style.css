@@ -598,7 +598,8 @@ a {
   background-color: rgba(255, 255, 255, 0.85);
   z-index: 5;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  border-bottom: 1px solid #e1e1e1; }
 
 .menu-container {
   display: -ms-flexbox;
@@ -667,7 +668,8 @@ a {
 #secondary {
   width: 30%;
   padding-top: 60px;
-  padding-left: 45px; }
+  padding-left: 45px;
+  border-left: 1px solid #e1e1e1; }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -835,7 +837,8 @@ h3 {
   background-color: lightblue; }
 
 .content-area {
-  width: 70%; }
+  width: 70%;
+  padding-right: 25px; }
 
 .site-content {
   display: -ms-flexbox;
