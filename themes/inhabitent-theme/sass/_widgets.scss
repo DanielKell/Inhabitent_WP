@@ -4,14 +4,52 @@
 
 .widget {
 	margin: 0 0 $base__space-unit;
-
 	/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
 	}
 }
 
+
 /* Search widget. */
+
 .widget_search .search-submit {
 	display: none;
 }
+
+.textwidget {
+	p {
+		span {
+			font-family: 'Merriweather-Bold';
+		}
+		a {
+			color: $green_brand_color;
+			text-decoration: none;
+			&:hover {
+				color: $purple_brand_color;
+			}
+		}
+	}
+}
+
+.widget_archive {
+	ul {
+		list-style: none;
+		padding: 0;
+		a {
+			color: $green_brand_color;
+			text-decoration: none;
+			&:hover {
+				color: $purple_brand_color;
+			}
+		}
+	}
+}
+
+// .fa {
+// 	font: 15px FontAwesome;
+// }
+
+// .fa-phone:before {
+// 	content: "\f0e0";
+// }

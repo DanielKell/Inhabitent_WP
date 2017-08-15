@@ -11,7 +11,7 @@
 .top-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
 }
 
 .home {
@@ -46,6 +46,7 @@
     width: 50px;
     z-index: 999;
     margin-left: 20px;
+    margin-top: 10px;
 }
 
 .fa-search {
