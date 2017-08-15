@@ -225,9 +225,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Novecentosanswide-Normal", sans-serif;
   color: #404040; }
 
-.site-content {
-  padding: 60px 60px 60px 60px; }
-
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
@@ -667,7 +664,6 @@ a {
 
 #secondary {
   width: 30%;
-  padding-top: 60px;
   padding-left: 45px;
   border-left: 1px solid #e1e1e1; }
 
@@ -837,9 +833,40 @@ h3 {
   background-color: lightblue; }
 
 .content-area {
+  width: 100%; }
+
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .content-area {
   width: 70%;
   padding-right: 25px; }
 
 .site-content {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  padding-top: 50px; }
+
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content {
+  width: 1120px;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto; }
+
+.custom-hero {
+  height: 450px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .custom-hero h1 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Novecentosanswide-DemiBold'; }
+
+.entry-content {
+  width: 850px;
+  margin: auto;
+  padding: 30px; }
+  .entry-content h2 {
+    text-align: center;
+    font-size: 32px; }
