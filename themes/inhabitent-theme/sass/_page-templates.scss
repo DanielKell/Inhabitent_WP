@@ -56,6 +56,13 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
     }
 }
 
+h2 {
+            font-size: 24px;
+            font-family: 'Novecentosanswide-DemiBold';
+}
+
+.post-5 { //Formatting for About page
+
 .entry-content {
     width: 850px;
     margin: auto;
@@ -65,4 +72,41 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
         text-align: center;
         font-size: 32px;
     }
+}
+}
+
+//Styling for contact form
+
+.wpcf7-form {
+    p{
+        label{
+            font-family: $font__accent;
+            text-transform: uppercase;
+            span{
+                color: $orange_brand_color;
+            }
+        }
+    }
+}
+
+//Front page styling
+
+.front-page-container {
+    width: 90%;
+    margin: auto;
+}
+
+.front-blog-posts {
+    display:flex;
+    list-style-type: none;
+
+    li {
+        flex: 0 1 32%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.product-info-container, .recent-blog-entries h2, .adventures-container h2 {
+    text-align: center;
 }

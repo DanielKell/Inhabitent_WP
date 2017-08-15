@@ -882,10 +882,37 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
     font-size: 40px;
     font-family: 'Novecentosanswide-DemiBold'; }
 
-.entry-content {
+h2 {
+  font-size: 24px;
+  font-family: 'Novecentosanswide-DemiBold'; }
+
+.post-5 .entry-content {
   width: 850px;
   margin: auto;
   padding: 30px; }
-  .entry-content h2 {
+  .post-5 .entry-content h2 {
     text-align: center;
     font-size: 32px; }
+
+.wpcf7-form p label {
+  font-family: "Novecentosanswide-Normal", sans-serif;
+  text-transform: uppercase; }
+  .wpcf7-form p label span {
+    color: #d99054; }
+
+.front-page-container {
+  width: 90%;
+  margin: auto; }
+
+.front-blog-posts {
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none; }
+  .front-blog-posts li {
+    -ms-flex: 0 1 32%;
+        flex: 0 1 32%;
+    margin-left: 20px;
+    margin-right: 20px; }
+
+.product-info-container, .recent-blog-entries h2, .adventures-container h2 {
+  text-align: center; }
