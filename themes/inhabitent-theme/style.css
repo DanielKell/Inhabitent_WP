@@ -678,6 +678,9 @@ a {
   padding-left: 45px;
   border-left: 1px solid #e1e1e1; }
 
+.day-of-week {
+  font-family: 'Merriweather-Bold'; }
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/

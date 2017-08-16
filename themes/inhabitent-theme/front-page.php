@@ -22,7 +22,7 @@ get_header(); ?>
 
                 <ul class="front-product-posts">
         <?php
-            $args = array( 'post_type' => 'product');
+            $args = array( 'post_type' => 'product-type');
             $product_posts = get_terms( $args ); // returns an array of posts
         ?>
         
