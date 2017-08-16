@@ -2,18 +2,15 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+
 /* Front page */
 
 .blog {
     #primary {
         //background-color: lightblue;
     }
-    .footer {
-
-    }
-    .class-blog {
-
-    }
+    .footer {}
+    .class-blog {}
 }
 
 .content-area {
@@ -37,66 +34,66 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
 }
 
 .container {
-	//height: 600px;
-	// width: 100%;
-	// display: flex;
+    //height: 600px;
+    // width: 100%;
+    // display: flex;
     // justify-content: center;
 }
 
-.custom-hero { //hero banner image
-	height: 450px;
-	display: flex;
+.custom-hero {
+    //hero banner image
+    height: 450px;
+    display: flex;
     justify-content: center;
     align-items: center;
-
     h1 {
-    color: white;
-    font-size: 40px;
-    font-family: 'Novecentosanswide-DemiBold';
+        color: white;
+        font-size: 40px;
+        font-family: 'Novecentosanswide-DemiBold';
     }
 }
 
 h2 {
-            font-size: 24px;
-            font-family: 'Novecentosanswide-DemiBold';
+    font-size: 24px;
+    font-family: 'Novecentosanswide-DemiBold';
 }
 
-.post-5 { //Formatting for About page
-
-.entry-content {
-    width: 850px;
-    margin: auto;
-    padding: 30px;
-
-    h2 {
-        text-align: center;
-        font-size: 32px;
+.post-5 {
+    //Formatting for About page
+    .entry-content {
+        width: 850px;
+        margin: auto;
+        padding: 30px;
+        h2 {
+            text-align: center;
+            font-size: 32px;
+        }
     }
-}
 }
 
 //Styling for contact form
-
 .wpcf7-form {
-    p{
-        label{
+    p {
+        label {
             font-family: $font__accent;
             text-transform: uppercase;
-            span{
+            span {
                 color: $orange_brand_color;
             }
         }
     }
 }
 
-//Front page styling
+.wpcf7-submit {
+    @include green-button;
+}
 
+//Front page styling
 .home-hero-banner {
     height: 500px;
-    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../Inhabitent-site/images/home-hero.jpg) no-repeat top;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .4) 0, rgba(0, 0, 0, .4)), #969696 url(../../Inhabitent-site/images/home-hero.jpg) no-repeat top;
     background-size: cover;
     position: relative;
-
     .home-page-logo {
         position: absolute;
         margin-top: 10%;
@@ -106,31 +103,25 @@ h2 {
 
 .front-page-container {
     width: 100%;
-
-    .front-page-content-container{
-    width: 94%;
-    margin: auto;
-
-    ul {
-        padding-left: 0px; //Resets the default 40px padding
-    }
-
-    h2 {
-        font-size: 2.4rem;
-        margin-bottom: 50px;
-        margin-top: 50px;
-        font-family: $font__accent;
-        font-weight: normal;
+    .front-page-content-container {
+        width: 94%;
+        margin: auto;
+        ul {
+            padding-left: 0px; //Resets the default 40px padding
+        }
+        h2 {
+            font-size: 2.4rem;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            font-family: $font__accent;
+            font-weight: normal;
+        }
     }
 }
-}
-
-
 
 //TAXONOMY PRODUCT SECTION
 .front-product-posts {
     display: flex;
-
     li {
         list-style-type: none;
         flex: 0 1 25%;
@@ -138,12 +129,11 @@ h2 {
         border-top: 4px solid lightgray;
         margin-right: 10px;
     }
-
-        .product-post-piece {
-            img {
-                height: 70px;
-                margin-top: 20px;
-            }
+    .product-post-piece {
+        img {
+            height: 70px;
+            margin-top: 20px;
+        }
     }
 }
 
@@ -151,46 +141,38 @@ h2 {
     padding: 10px;
 }
 
-
-
 //BLOG POST SECTION
 .front-blog-posts {
-    display:flex;
+    display: flex;
     list-style-type: none;
-
     li {
         flex: 0 1 32%;
         margin-left: 10px;
         margin-right: 10px;
         border: $base__border-solid;
     }
-
     h3 {
         margin-top: 0px;
         a {
             color: $green_brand_color;
-            text-decoration: none;   
+            text-decoration: none;
             font-family: 'Novecentosanswide-DemiBold';
             font-size: 1.3rem;
-
             &:hover {
                 color: $purple_brand_color;
-          }
+            }
         }
     }
 }
 
 .front-blog-details {
-
-margin-left: 10px;
-
-.entry-meta {
-    font-size: 12px;
-
-    .byline {
-        display: none;
+    margin-left: 10px;
+    .entry-meta {
+        font-size: 12px;
+        .byline {
+            display: none;
+        }
     }
-}
 }
 
 .journal-thumbnail-wrapper {
@@ -200,55 +182,91 @@ margin-left: 10px;
     }
 }
 
-.product-info-container, .recent-blog-entries h2, .adventures-container h2 {
+.product-info-container,
+.recent-blog-entries h2,
+.adventures-container h2 {
     text-align: center;
 }
 
-
 //Styling the Latest Adventures on Front Page
+.adventures-container {
+    p {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        a {
+        @include green-button;
+        font-size: 18px;
+        }
+    }
+}
 
 .left-and-right-boxes {
     display: flex;
 }
 
 .adventure-boxes {
-
     display: flex;
     margin: 10px;
     flex-wrap: wrap;
-
-    ul {
-        li {
+    li {
         list-style: none;
+        h3 {
+            color: white;
+            font-family: $font__main;
+            text-transform: none;
+            letter-spacing: 2px;
+            line-height: 48px;
+            font-weight: normal;
+            margin-left: 20px;
+            &:hover {
+                color: $yellow_brand_color;
+            }
         }
     }
+    a {
+        margin-left: 20px;
+    }
 
-.adventure-box1 {
-    height: 540px;
-    width: 540px;
-    background-image: url('../../Inhabitent-site/images/adventure-photos/canoe-girl.jpg');
-    background-size: cover;
-}
-
-.adventure-box2 {
-    height: 250px;
-    width: 560px;
-    background-image: url('../../Inhabitent-site/images/adventure-photos/beach-bonfire.jpg');
-    background-size: cover;
-}
-
-.adventure-box3 {
-    height: 270px;
-    width: 270px;
-    background-image: url('../../Inhabitent-site/images/adventure-photos/mountain-hikers.jpg');
-    background-size: cover;
-}
-
-.adventure-box4 {
-    height: 270px;
-    width: 270px;
-    background-image: url('../../Inhabitent-site/images/adventure-photos/night-sky.jpg');
-    background-size: cover;
+    .adventure-box1 {
+        height: 540px;
+        width: 540px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25) 0px, rgba(0, 0, 0, 0.25)), url('../../Inhabitent-site/images/adventure-photos/canoe-girl.jpg');
+        background-size: cover;
+        h3 {
+            font-size: 48px;
+        }
+    }
+    .adventure-box2 {
+        height: 250px;
+        width: 560px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25) 0px, rgba(0, 0, 0, 0.25)), url('../../Inhabitent-site/images/adventure-photos/beach-bonfire.jpg');
+        background-size: cover;
+        margin-bottom: 20px;
+        h3 {
+            font-size: 38px;
+        }
+    }
+    .adventure-box3 {
+        height: 270px;
+        width: 270px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25) 0px, rgba(0, 0, 0, 0.25)), url('../../Inhabitent-site/images/adventure-photos/mountain-hikers.jpg');
+        background-size: cover;
+        margin-right: 20px;
+        h3 {
+            font-size: 26px;
+            line-height: 32px;
+        }
+    }
+    .adventure-box4 {
+        height: 270px;
+        width: 270px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25) 0px, rgba(0, 0, 0, 0.25)), url('../../Inhabitent-site/images/adventure-photos/night-sky.jpg');
+        background-size: cover;
+        h3 {
+            font-size: 26px;
+            line-height: 32px;
+        }
     }
 }
 
@@ -258,9 +276,13 @@ margin-left: 10px;
 }
 
 //Styling the Shop
-
 .entry-header {
     img {
         width: 100px;
     }
+}
+
+//Buttons!
+.white-button {
+    @include white-button;
 }

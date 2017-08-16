@@ -93,20 +93,36 @@ get_header(); ?>
                 <div class="left-boxes">
                     <ul class="adventure-boxes">
                         <li class="adventure-box1">
+                            <h3 class="adventure-text"> Getting Back to Nature in a Canoe
+                            </h3>
+                            <a class="white-button">Read More</a>
                         </li>
                     </ul>
                 </div>
                 <div class="right-boxes">
                     <ul class="adventure-boxes">
                         <li class="adventure-box2">
+                            <h3 class="adventure-text"> A Night with Friends at the Beach
+                            </h3>
+                            <a class="white-button">Read More</a>
                         </li>
                         <li class="adventure-box3">
+                            <h3 class="adventure-text"> Taking in the View at Big Mountain
+                            </h3>
+                            <a class="white-button">Read More</a>
                         </li>
                         <li class="adventure-box4">
+                            <h3 class="adventure-text"> Star-Gazing at the Night Sky
+                            </h3>
+                            <a class="white-button">Read More</a>
                         </li>
                     </ul>
                 </div>
             </div>
+            <p>
+                <a>More Adventures</a>
+            </p>
+
     </section> 
 
 
