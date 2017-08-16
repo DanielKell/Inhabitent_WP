@@ -58,19 +58,6 @@ h2 {
     font-family: 'Novecentosanswide-DemiBold';
 }
 
-.post-5 {
-    //Formatting for About page
-    .entry-content {
-        width: 850px;
-        margin: auto;
-        padding: 30px;
-        h2 {
-            text-align: center;
-            font-size: 32px;
-        }
-    }
-}
-
 //Styling for contact form
 .wpcf7-form {
     p {
@@ -84,7 +71,12 @@ h2 {
     }
 }
 
-.wpcf7-submit, .submit {
+.wpcf7-form-control {
+    background-color: rgb(244, 244, 244);
+}
+
+.wpcf7-submit,
+.submit {
     @include green-button;
 }
 
@@ -169,8 +161,18 @@ h2 {
     margin-left: 10px;
     .entry-meta {
         font-size: 12px;
-        .byline {
-            display: none;
+    }
+    .byline {
+        display: none;
+    }
+}
+
+.comments-link {
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: $yellow_brand_color;
         }
     }
 }
@@ -294,7 +296,6 @@ h2 {
         max-width: 75%;
         line-height: 40px;
         font-family: 'Novecentosanswide-DemiBold';
-
         a {
             color: white;
             text-decoration: none;
@@ -322,15 +323,19 @@ h2 {
 }
 
 //Styling the individual journal pages
-.cat-links, .tags-links {
+.cat-links,
+.tags-links {
     margin-right: 20px;
     font-family: 'Novecentosanswide-Normal';
     text-transform: uppercase;
-
     a {
         color: $green_brand_color;
         text-decoration: none;
     }
+}
+
+.social-buttons {
+    margin: 20px 0px 75px 0px;
 }
 
 .comment-reply-title {
@@ -343,14 +348,72 @@ h2 {
     margin-bottom: 75px;
 }
 
+.post-navigation {
+    //Used to hide the next and previous posts on the individual journal pages
+    display: none;
+}
+
 //Styling the Shop
 // .entry-header {
 //     img {
 //         width: 100px;
 //     }
 // }
-
 //Buttons!
 .white-button {
     @include white-button;
+}
+
+.black-button {
+    @include black-button;
+}
+
+.post-5 {
+    //Formatting for About page
+
+    .custom-hero {
+        h1 {
+            position:inherit;
+            background-color: transparent;
+        }
+    }
+    .entry-content {
+        width: 850px;
+        margin: auto;
+        padding: 30px;
+        h2 {
+            text-align: center;
+            font-size: 32px;
+        }
+    }
+}
+
+//Syling the Find Us page
+
+.post-7 {
+
+    h2 {
+        font-size: 33px;
+    }
+    .entry-header {
+        position: initial;
+        .entry-title {
+            position: initial;
+        }
+
+        h1 {
+            color: black;
+            background-color: white;
+            font-size: 38px;
+        }
+    }
+}
+
+//Styling the Archive pages (Month archive/Tag/Category)
+
+.page-title {
+    font-size: 38px;
+    font-family: 'Novecentosanswide-DemiBold';
+    border-bottom: $base__border-solid;
+    padding: 25px 0px;
 }
