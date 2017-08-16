@@ -910,7 +910,7 @@ h2 {
   .wpcf7-form p label span {
     color: #d99054; }
 
-.wpcf7-submit {
+.wpcf7-submit, .submit {
   background: #248a83;
   border: none;
   border-radius: 0;
@@ -923,7 +923,7 @@ h2 {
   padding: .75rem 1.5rem;
   text-decoration: none;
   text-transform: uppercase; }
-  .wpcf7-submit:hover {
+  .wpcf7-submit:hover, .submit:hover {
     background: #19625d;
     color: white; }
 
@@ -1100,8 +1100,73 @@ h2 {
     background: #19625d;
     color: white; }
 
-.entry-header img {
-  width: 100px; }
+.entry-content {
+  margin-bottom: 50px; }
+
+.entry-header {
+  position: relative; }
+  .entry-header .entry-title {
+    position: absolute;
+    top: 0px;
+    background-color: #248a83;
+    color: #fff;
+    font-size: 33.6px;
+    font-size: 2.1rem;
+    left: 0;
+    padding: .75rem 1.5rem;
+    margin-top: 2.25rem;
+    max-width: 75%;
+    line-height: 40px;
+    font-family: 'Novecentosanswide-DemiBold'; }
+    .entry-header .entry-title a {
+      color: white;
+      text-decoration: none;
+      line-height: 40px; }
+  .entry-header .entry-meta {
+    position: absolute;
+    bottom: 8px;
+    background-color: #248a83;
+    color: #fff;
+    display: inline-block;
+    font-family: Novecento Sans Web, sans-serif;
+    padding: .2rem 2rem;
+    right: 0;
+    text-transform: uppercase; }
+
+.read-more-button {
+  margin-top: 25px; }
+  .read-more-button .moretag {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 0;
+    color: black;
+    cursor: pointer;
+    font-family: Novecento Sans Web,sans-serif;
+    font-size: 14.4px;
+    font-size: .9rem;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase; }
+    .read-more-button .moretag:hover {
+      background: #248a83;
+      color: white; }
+
+.cat-links, .tags-links {
+  margin-right: 20px;
+  font-family: 'Novecentosanswide-Normal';
+  text-transform: uppercase; }
+  .cat-links a, .tags-links a {
+    color: #248A83;
+    text-decoration: none; }
+
+.comment-reply-title {
+  color: black;
+  font-family: 'Novecentosanswide-DemiBold';
+  font-size: 28px; }
+
+.comment-form {
+  margin-bottom: 75px; }
 
 .white-button {
   background-color: transparent;

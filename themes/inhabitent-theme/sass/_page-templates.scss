@@ -84,7 +84,7 @@ h2 {
     }
 }
 
-.wpcf7-submit {
+.wpcf7-submit, .submit {
     @include green-button;
 }
 
@@ -195,8 +195,8 @@ h2 {
         margin-bottom: 50px;
         margin-left: 10px;
         a {
-        @include green-button;
-        font-size: 18px;
+            @include green-button;
+            font-size: 18px;
         }
     }
 }
@@ -227,7 +227,6 @@ h2 {
     a {
         margin-left: 20px;
     }
-
     .adventure-box1 {
         height: 540px;
         width: 540px;
@@ -275,12 +274,81 @@ h2 {
     @include green-button;
 }
 
-//Styling the Shop
+//Styling the Journal
+.entry-content {
+    margin-bottom: 50px;
+}
+
 .entry-header {
-    img {
-        width: 100px;
+    position: relative;
+    .entry-title {
+        position: absolute;
+        top: 0px;
+        background-color: #248a83;
+        color: #fff;
+        font-size: 33.6px;
+        font-size: 2.1rem;
+        left: 0;
+        padding: .75rem 1.5rem;
+        margin-top: 2.25rem;
+        max-width: 75%;
+        line-height: 40px;
+        font-family: 'Novecentosanswide-DemiBold';
+
+        a {
+            color: white;
+            text-decoration: none;
+            line-height: 40px;
+        }
+    }
+    .entry-meta {
+        position: absolute;
+        bottom: 8px;
+        background-color: #248a83;
+        color: #fff;
+        display: inline-block;
+        font-family: Novecento Sans Web, sans-serif;
+        padding: .2rem 2rem;
+        right: 0;
+        text-transform: uppercase;
     }
 }
+
+.read-more-button {
+    margin-top: 25px;
+    .moretag {
+        @include black-button;
+    }
+}
+
+//Styling the individual journal pages
+.cat-links, .tags-links {
+    margin-right: 20px;
+    font-family: 'Novecentosanswide-Normal';
+    text-transform: uppercase;
+
+    a {
+        color: $green_brand_color;
+        text-decoration: none;
+    }
+}
+
+.comment-reply-title {
+    color: black;
+    font-family: 'Novecentosanswide-DemiBold';
+    font-size: 28px;
+}
+
+.comment-form {
+    margin-bottom: 75px;
+}
+
+//Styling the Shop
+// .entry-header {
+//     img {
+//         width: 100px;
+//     }
+// }
 
 //Buttons!
 .white-button {

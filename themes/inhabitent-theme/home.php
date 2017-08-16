@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file.
+ * File for the Journal Page!
  *
  * @package RED_Starter_Theme
  */

@@ -53,9 +53,9 @@
 
 @mixin black-button {
 	background-color: transparent;		
-    border: none;
+    border: 1px solid black;
     border-radius: 0;
-    color: #fff;
+    color: black;
     cursor: pointer;
     font-family: Novecento Sans Web,sans-serif;
     font-size: 14.4px;
