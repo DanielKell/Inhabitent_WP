@@ -6,7 +6,7 @@
 
 .blog {
     #primary {
-        background-color: lightblue;
+        //background-color: lightblue;
     }
     .footer {
 
@@ -91,22 +91,176 @@ h2 {
 
 //Front page styling
 
-.front-page-container {
-    width: 90%;
-    margin: auto;
+.home-hero-banner {
+    height: 500px;
+    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../Inhabitent-site/images/home-hero.jpg) no-repeat top;
+    background-size: cover;
+    position: relative;
+
+    .home-page-logo {
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 37.5%;
+    }
 }
 
+.front-page-container {
+    width: 100%;
+
+    .front-page-content-container{
+    width: 94%;
+    margin: auto;
+
+    ul {
+        padding-left: 0px; //Resets the default 40px padding
+    }
+
+    h2 {
+        font-size: 2.4rem;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        font-family: $font__accent;
+        font-weight: normal;
+    }
+}
+}
+
+
+
+//TAXONOMY PRODUCT SECTION
+.front-product-posts {
+    display: flex;
+
+    li {
+        list-style-type: none;
+        flex: 0 1 25%;
+        border: $base__border-solid;
+        border-top: 4px solid lightgray;
+        margin-right: 10px;
+    }
+
+        .product-post-piece {
+            img {
+                height: 70px;
+                margin-top: 20px;
+            }
+    }
+}
+
+.taxonomy-description {
+    padding: 10px;
+}
+
+
+
+//BLOG POST SECTION
 .front-blog-posts {
     display:flex;
     list-style-type: none;
 
     li {
         flex: 0 1 32%;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border: $base__border-solid;
+    }
+
+    h3 {
+        margin-top: 0px;
+        a {
+            color: $green_brand_color;
+            text-decoration: none;   
+            font-family: 'Novecentosanswide-DemiBold';
+            font-size: 1.3rem;
+
+            &:hover {
+                color: $purple_brand_color;
+          }
+        }
+    }
+}
+
+.front-blog-details {
+
+margin-left: 10px;
+
+.entry-meta {
+    font-size: 12px;
+
+    .byline {
+        display: none;
+    }
+}
+}
+
+.journal-thumbnail-wrapper {
+    img {
+        border-bottom: 5px solid lightgray;
+        height: 100%;
     }
 }
 
 .product-info-container, .recent-blog-entries h2, .adventures-container h2 {
     text-align: center;
+}
+
+
+//Styling the Latest Adventures on Front Page
+
+.left-and-right-boxes {
+    display: flex;
+}
+
+.adventure-boxes {
+
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+
+    ul {
+        li {
+        list-style: none;
+        }
+    }
+
+.adventure-box1 {
+    height: 540px;
+    width: 540px;
+    background-image: url('../../Inhabitent-site/images/adventure-photos/canoe-girl.jpg');
+    background-size: cover;
+}
+
+.adventure-box2 {
+    height: 250px;
+    width: 560px;
+    background-image: url('../../Inhabitent-site/images/adventure-photos/beach-bonfire.jpg');
+    background-size: cover;
+}
+
+.adventure-box3 {
+    height: 270px;
+    width: 270px;
+    background-image: url('../../Inhabitent-site/images/adventure-photos/mountain-hikers.jpg');
+    background-size: cover;
+}
+
+.adventure-box4 {
+    height: 270px;
+    width: 270px;
+    background-image: url('../../Inhabitent-site/images/adventure-photos/night-sky.jpg');
+    background-size: cover;
+    }
+}
+
+//Styling the Read More button
+.moretag {
+    @include green-button;
+}
+
+//Styling the Shop
+
+.entry-header {
+    img {
+        width: 100px;
+    }
 }
