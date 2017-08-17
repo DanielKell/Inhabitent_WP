@@ -1153,7 +1153,9 @@ h2 {
     text-transform: uppercase; }
     .read-more-button .moretag:hover {
       background: #248a83;
-      color: white; }
+      color: white;
+      box-shadow: none;
+      text-shadow: none; }
 
 .cat-links,
 .tags-links {
@@ -1264,7 +1266,9 @@ h2 {
   text-transform: uppercase; }
   .white-button:hover {
     background: #248a83;
-    color: white; }
+    color: white;
+    box-shadow: none;
+    text-shadow: none; }
 
 .black-button {
   background-color: transparent;
@@ -1281,7 +1285,9 @@ h2 {
   text-transform: uppercase; }
   .black-button:hover {
     background: #248a83;
-    color: white; }
+    color: white;
+    box-shadow: none;
+    text-shadow: none; }
 
 .post-5 .custom-hero h1 {
   position: inherit;
