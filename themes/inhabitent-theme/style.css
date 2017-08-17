@@ -1116,7 +1116,7 @@ h2 {
     font-size: 33.6px;
     font-size: 2.1rem;
     left: 0;
-    padding: .75rem 1.5rem;
+    padding: .75rem 0rem;
     margin-top: 2.25rem;
     max-width: 75%;
     line-height: 40px;
@@ -1242,3 +1242,49 @@ h2 {
   font-family: 'Novecentosanswide-DemiBold';
   border-bottom: 1px solid #e1e1e1;
   padding: 25px 0px; }
+
+.search-results .entry-header .entry-title {
+  position: inherit;
+  background-color: transparent; }
+  .search-results .entry-header .entry-title a {
+    color: #248A83; }
+
+.search-results .entry-header .entry-meta {
+  display: none; }
+
+.search-pagination {
+  border-top: 1px solid #e1e1e1;
+  font-family: "Novecentosanswide-Normal", sans-serif;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  padding: 1.5rem 0;
+  text-transform: uppercase; }
+  .search-pagination .page-numbers {
+    text-decoration: none;
+    background-color: #248a83;
+    color: #fff;
+    display: inline-block;
+    line-height: 1;
+    padding: 8px 12px;
+    margin-right: 4px;
+    text-align: center; }
+  .search-pagination .page-numbers.current {
+    background-color: gray; }
+
+.error-404 {
+  padding-bottom: 50px; }
+  .error-404 h1 {
+    border-bottom: none; }
+  .error-404 p {
+    padding-bottom: 20px; }
+
+.widget_recent_entries ul,
+.widget_categories ul {
+  padding-left: 0px; }
+  .widget_recent_entries ul li,
+  .widget_categories ul li {
+    list-style: none; }
+    .widget_recent_entries ul li a,
+    .widget_categories ul li a {
+      color: #248A83;
+      text-decoration: none; }

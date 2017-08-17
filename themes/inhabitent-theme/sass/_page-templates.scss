@@ -277,11 +277,12 @@ h2 {
 }
 
 //Styling the Journal
+
 .entry-content {
     margin-bottom: 50px;
 }
 
-.entry-header {
+.entry-header, {
     position: relative;
     .entry-title {
         position: absolute;
@@ -291,7 +292,7 @@ h2 {
         font-size: 33.6px;
         font-size: 2.1rem;
         left: 0;
-        padding: .75rem 1.5rem;
+        padding: .75rem 0rem;
         margin-top: 2.25rem;
         max-width: 75%;
         line-height: 40px;
@@ -314,6 +315,7 @@ h2 {
         text-transform: uppercase;
     }
 }
+
 
 .read-more-button {
     margin-top: 25px;
@@ -370,10 +372,9 @@ h2 {
 
 .post-5 {
     //Formatting for About page
-
     .custom-hero {
         h1 {
-            position:inherit;
+            position: inherit;
             background-color: transparent;
         }
     }
@@ -389,9 +390,7 @@ h2 {
 }
 
 //Syling the Find Us page
-
 .post-7 {
-
     h2 {
         font-size: 33px;
     }
@@ -400,7 +399,6 @@ h2 {
         .entry-title {
             position: initial;
         }
-
         h1 {
             color: black;
             background-color: white;
@@ -410,10 +408,76 @@ h2 {
 }
 
 //Styling the Archive pages (Month archive/Tag/Category)
-
 .page-title {
     font-size: 38px;
     font-family: 'Novecentosanswide-DemiBold';
     border-bottom: $base__border-solid;
     padding: 25px 0px;
+}
+
+//Styling the Search Results Page
+
+.search-results {
+    .entry-header {
+        .entry-title {
+        position: inherit;
+        background-color: transparent;
+        a {
+            color: $green_brand_color;
+        }
+
+        }
+        .entry-meta {
+            display: none;
+        }
+    }
+}
+
+.search-pagination {
+    border-top: $base__border-solid;
+    font-family: $font__accent;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding: 1.5rem 0;
+    text-transform: uppercase;
+
+    .page-numbers {
+        text-decoration: none;
+        background-color: #248a83;
+        color: #fff;
+        display: inline-block;
+        line-height: 1;
+        padding: 8px 12px;
+        margin-right: 4px;
+        text-align: center;
+    }
+
+    .page-numbers.current {
+        background-color: gray;
+    }
+}
+
+//Styling the 404 page
+.error-404 {
+    padding-bottom: 50px;
+    h1 {
+        border-bottom: none;
+    }
+    p {
+        padding-bottom: 20px;
+    }
+}
+
+.widget_recent_entries,
+.widget_categories {
+    ul {
+        padding-left: 0px;
+        li {
+            list-style: none;
+            a {
+                color: $green_brand_color;
+                text-decoration: none;
+            }
+        }
+    }
 }
