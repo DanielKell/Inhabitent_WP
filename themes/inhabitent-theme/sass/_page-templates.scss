@@ -277,12 +277,12 @@ h2 {
 }
 
 //Styling the Journal
-
 .entry-content {
     margin-bottom: 50px;
 }
 
-.entry-header, {
+.entry-header,
+{
     position: relative;
     .entry-title {
         position: absolute;
@@ -315,7 +315,6 @@ h2 {
         text-transform: uppercase;
     }
 }
-
 
 .read-more-button {
     margin-top: 25px;
@@ -356,11 +355,86 @@ h2 {
 }
 
 //Styling the Shop
-// .entry-header {
-//     img {
-//         width: 100px;
-//     }
-// }
+.post-type-archive-product, .post-type-archive-adventure {
+    .site-content {
+        padding-top: 50px;
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+    .content-area {
+        padding: 40px 0;
+    }
+    .page-header {
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+        border-bottom: $base__border-dashed;
+        h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .flex-container-no-wrap {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        a {
+            color: $green_brand_color;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: $font__accent;
+            font-size: 19px;
+            &:hover {
+                color: $purple_brand_color;
+            }
+        }
+    }
+    .product-types {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+    .flex-product-item {
+        max-width: 25%;
+    }
+    .product-thumbnail {
+        overflow: hidden;
+        height: 250px;
+        position: relative;
+        img {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            max-height: 250px;
+            max-width: none;
+            width: auto;
+            transform: translate(50%, -50%);
+        }
+    }
+    .product-title-section {
+        border: $base__border-solid;
+        margin-bottom: 40px;
+        padding: 10px;
+        border-top-width: 5px;
+
+        h2 {
+            font-size: 16px;
+            position: relative;
+            text-align: center;
+            span:first-child {
+                position: absolute;
+                left: 0;
+                background-color: $main_background_color;
+                padding-right: 2px;
+            }
+            span:last-child {
+                position: absolute;
+                right: 0;
+                background-color: $main_background_color;
+                padding-left: 2px;
+            }
+        }
+    }
+}
+
 //Buttons!
 .white-button {
     @include white-button;
@@ -416,16 +490,14 @@ h2 {
 }
 
 //Styling the Search Results Page
-
 .search-results {
     .entry-header {
         .entry-title {
-        position: inherit;
-        background-color: transparent;
-        a {
-            color: $green_brand_color;
-        }
-
+            position: inherit;
+            background-color: transparent;
+            a {
+                color: $green_brand_color;
+            }
         }
         .entry-meta {
             display: none;
@@ -440,7 +512,6 @@ h2 {
     margin-bottom: 30px;
     padding: 1.5rem 0;
     text-transform: uppercase;
-
     .page-numbers {
         text-decoration: none;
         background-color: #248a83;
@@ -451,7 +522,6 @@ h2 {
         margin-right: 4px;
         text-align: center;
     }
-
     .page-numbers.current {
         background-color: gray;
     }

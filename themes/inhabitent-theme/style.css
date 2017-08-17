@@ -1179,6 +1179,76 @@ h2 {
 .post-navigation {
   display: none; }
 
+.post-type-archive-product .site-content, .post-type-archive-adventure .site-content {
+  padding-top: 50px;
+  max-width: 1120px;
+  margin: 0 auto; }
+
+.post-type-archive-product .content-area, .post-type-archive-adventure .content-area {
+  padding: 40px 0; }
+
+.post-type-archive-product .page-header, .post-type-archive-adventure .page-header {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px dashed #c8c8c8; }
+  .post-type-archive-product .page-header h1, .post-type-archive-adventure .page-header h1 {
+    font-size: 36px;
+    margin-bottom: 30px; }
+  .post-type-archive-product .page-header .flex-container-no-wrap, .post-type-archive-adventure .page-header .flex-container-no-wrap {
+    max-width: 400px;
+    margin: 0 auto; }
+  .post-type-archive-product .page-header a, .post-type-archive-adventure .page-header a {
+    color: #248A83;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Novecentosanswide-Normal", sans-serif;
+    font-size: 19px; }
+    .post-type-archive-product .page-header a:hover, .post-type-archive-adventure .page-header a:hover {
+      color: #2f1339; }
+
+.post-type-archive-product .product-types, .post-type-archive-adventure .product-types {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none; }
+
+.post-type-archive-product .flex-product-item, .post-type-archive-adventure .flex-product-item {
+  max-width: 25%; }
+
+.post-type-archive-product .product-thumbnail, .post-type-archive-adventure .product-thumbnail {
+  overflow: hidden;
+  height: 250px;
+  position: relative; }
+  .post-type-archive-product .product-thumbnail img, .post-type-archive-adventure .product-thumbnail img {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    max-height: 250px;
+    max-width: none;
+    width: auto;
+    transform: translate(50%, -50%); }
+
+.post-type-archive-product .product-title-section, .post-type-archive-adventure .product-title-section {
+  border: 1px solid #e1e1e1;
+  margin-bottom: 40px;
+  padding: 10px;
+  border-top-width: 5px; }
+  .post-type-archive-product .product-title-section h2, .post-type-archive-adventure .product-title-section h2 {
+    font-size: 16px;
+    position: relative;
+    text-align: center; }
+    .post-type-archive-product .product-title-section h2 span:first-child, .post-type-archive-adventure .product-title-section h2 span:first-child {
+      position: absolute;
+      left: 0;
+      background-color: #ffffff;
+      padding-right: 2px; }
+    .post-type-archive-product .product-title-section h2 span:last-child, .post-type-archive-adventure .product-title-section h2 span:last-child {
+      position: absolute;
+      right: 0;
+      background-color: #ffffff;
+      padding-left: 2px; }
+
 .white-button {
   background-color: transparent;
   border: 1px solid #fff;
