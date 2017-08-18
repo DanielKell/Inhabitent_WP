@@ -963,7 +963,8 @@ h2 {
     margin-top: 20px; }
 
 .taxonomy-description {
-  padding: 10px; }
+  padding: 10px;
+  text-align: center; }
 
 .front-blog-posts {
   display: -ms-flexbox;
@@ -1181,48 +1182,62 @@ h2 {
 .post-navigation {
   display: none; }
 
-.post-type-archive-product .site-content, .post-type-archive-adventure .site-content {
+.post-type-archive-product .site-content, .post-type-archive-adventure .site-content, .tax-product-type .site-content {
   padding-top: 50px;
   max-width: 1120px;
   margin: 0 auto; }
 
-.post-type-archive-product .content-area, .post-type-archive-adventure .content-area {
-  padding: 40px 0; }
+.post-type-archive-product .content-area, .post-type-archive-adventure .content-area, .tax-product-type .content-area {
+  padding: 30px 0; }
 
-.post-type-archive-product .page-header, .post-type-archive-adventure .page-header {
-  margin-bottom: 50px;
-  padding-bottom: 50px;
+.post-type-archive-product .page-header, .post-type-archive-adventure .page-header, .tax-product-type .page-header {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
   border-bottom: 1px dashed #c8c8c8; }
-  .post-type-archive-product .page-header h1, .post-type-archive-adventure .page-header h1 {
+  .post-type-archive-product .page-header h1, .post-type-archive-adventure .page-header h1, .tax-product-type .page-header h1 {
     font-size: 36px;
-    margin-bottom: 30px; }
-  .post-type-archive-product .page-header .flex-container-no-wrap, .post-type-archive-adventure .page-header .flex-container-no-wrap {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-bottom: none;
+    text-align: center; }
+  .post-type-archive-product .page-header .flex-container-no-wrap, .post-type-archive-adventure .page-header .flex-container-no-wrap, .tax-product-type .page-header .flex-container-no-wrap {
     max-width: 400px;
     margin: 0 auto; }
-  .post-type-archive-product .page-header a, .post-type-archive-adventure .page-header a {
+  .post-type-archive-product .page-header a, .post-type-archive-adventure .page-header a, .tax-product-type .page-header a {
     color: #248A83;
     text-decoration: none;
     text-transform: uppercase;
     font-family: "Novecentosanswide-Normal", sans-serif;
     font-size: 19px; }
-    .post-type-archive-product .page-header a:hover, .post-type-archive-adventure .page-header a:hover {
+    .post-type-archive-product .page-header a:hover, .post-type-archive-adventure .page-header a:hover, .tax-product-type .page-header a:hover {
       color: #2f1339; }
 
-.post-type-archive-product .product-types, .post-type-archive-adventure .product-types {
+.post-type-archive-product .product-types, .post-type-archive-adventure .product-types, .tax-product-type .product-types {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  list-style-type: none; }
+  list-style-type: none;
+  padding-left: 0px; }
 
-.post-type-archive-product .flex-product-item, .post-type-archive-adventure .flex-product-item {
-  max-width: 25%; }
+.post-type-archive-product .flex-container, .post-type-archive-adventure .flex-container, .tax-product-type .flex-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  display: -ms-flexbox;
+  display: flex; }
 
-.post-type-archive-product .product-thumbnail, .post-type-archive-adventure .product-thumbnail {
+.post-type-archive-product .flex-product-item, .post-type-archive-adventure .flex-product-item, .tax-product-type .flex-product-item {
+  width: 22.5%;
+  margin: 12px;
+  margin-bottom: 0px; }
+
+.post-type-archive-product .product-thumbnail, .post-type-archive-adventure .product-thumbnail, .tax-product-type .product-thumbnail {
   overflow: hidden;
   height: 250px;
   position: relative; }
-  .post-type-archive-product .product-thumbnail img, .post-type-archive-adventure .product-thumbnail img {
+  .post-type-archive-product .product-thumbnail img, .post-type-archive-adventure .product-thumbnail img, .tax-product-type .product-thumbnail img {
     position: absolute;
     top: 50%;
     right: 50%;
@@ -1231,25 +1246,49 @@ h2 {
     width: auto;
     transform: translate(50%, -50%); }
 
-.post-type-archive-product .product-title-section, .post-type-archive-adventure .product-title-section {
+.post-type-archive-product .product-title-section, .post-type-archive-adventure .product-title-section, .tax-product-type .product-title-section {
   border: 1px solid #e1e1e1;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   padding: 10px;
   border-top-width: 5px; }
-  .post-type-archive-product .product-title-section h2, .post-type-archive-adventure .product-title-section h2 {
+  .post-type-archive-product .product-title-section h2, .post-type-archive-adventure .product-title-section h2, .tax-product-type .product-title-section h2 {
     font-size: 16px;
     position: relative;
-    text-align: center; }
-    .post-type-archive-product .product-title-section h2 span:first-child, .post-type-archive-adventure .product-title-section h2 span:first-child {
+    text-align: center;
+    font-family: "Merriweather-Light", sans-serif;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: 0px; }
+    .post-type-archive-product .product-title-section h2 span:first-child, .post-type-archive-adventure .product-title-section h2 span:first-child, .tax-product-type .product-title-section h2 span:first-child {
       position: absolute;
       left: 0;
       background-color: #ffffff;
       padding-right: 2px; }
-    .post-type-archive-product .product-title-section h2 span:last-child, .post-type-archive-adventure .product-title-section h2 span:last-child {
+    .post-type-archive-product .product-title-section h2 span:last-child, .post-type-archive-adventure .product-title-section h2 span:last-child, .tax-product-type .product-title-section h2 span:last-child {
       position: absolute;
       right: 0;
+      top: 0;
       background-color: #ffffff;
       padding-left: 2px; }
+
+.individual-product-page {
+  display: -ms-flexbox;
+  display: flex;
+  width: 1120px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 50px; }
+  .individual-product-page .product-item-left-half {
+    width: 50%;
+    margin-right: 20px; }
+  .individual-product-page .product-item-right-half {
+    width: 45%;
+    margin: auto; }
+    .individual-product-page .product-item-right-half h1 {
+      color: #d99054;
+      font-family: 'Novecentosanswide-DemiBold'; }
+    .individual-product-page .product-item-right-half h2 {
+      font-family: 'Novecentosanswide-Normal'; }
 
 .white-button {
   background-color: transparent;
@@ -1288,6 +1327,9 @@ h2 {
     color: white;
     box-shadow: none;
     text-shadow: none; }
+  .black-button span {
+    font-family: 'Novecentosanswide-Normal';
+    margin-left: 5px; }
 
 .post-5 .custom-hero h1 {
   position: inherit;

@@ -88,3 +88,25 @@ add_filter( 'get_the_archive_title', function ( $title ) {
     return $title;
 
 });
+
+
+//Changes the name at top of shop and product pages
+function inhabitent_archive_title( $title ) {
+    if  ( is_post_type_archive('product') ) {
+        $title = 'Shop Stuff';
+    } elseif ( is_tax('product-type') ) {
+        $title = single_term_title( '', false);
+    }
+    return $title;
+}
+
+add_filter( 'get_the_archive_title', 'inhabitent_archive_title' );
+
+//Increase amount of posts that display in shop to max 16
+function inhabitent_limit_archive_posts($query){
+	if ($query->is_archive) {
+		$query->set('posts_per_page', 16);
+    }
+    return $query;
+}
+add_filter('pre_get_posts', 'inhabitent_limit_archive_posts');

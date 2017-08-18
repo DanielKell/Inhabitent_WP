@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Product Type
+ * The template for displaying archive pages.
  *
  * @package RED_Starter_Theme
  */
@@ -10,23 +10,46 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+		<?php if ( have_posts() ) : ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+			<header class="page-header">
+				<?php
+					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+				?>
 
-			<?php the_post_navigation(); ?>
+			</header><!-- .page-header -->
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+			<?php /* Start the Loop */ ?>
 
-		<?php endwhile; // End of the loop. ?>
+            <section class="flex-container">
+			<?php while ( have_posts() ) : the_post(); ?>
+
+                        <div class="flex-product-item">
+          <?php if ( has_post_thumbnail() ) : ?>
+					<a href=<?php echo get_post_permalink() ?>><div class="product-thumbnail"><?php the_post_thumbnail( 'large' ); ?></div></a>
+					<?php endif; ?>
+					<div class="product-title-section">
+						<h2 class="entry-title">
+							<span><?php the_title(); ?></span> 
+							<span>.....................................</span>
+							<span><?php echo CFS()->get( 'price' ); ?></span>
+						</h2>
+					</div>
+					
+				</div>
+
+			<?php endwhile; ?>
+
+			<?php the_posts_navigation(); ?>
+
+		<?php else : ?>
+
+			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+        </section>
+		<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

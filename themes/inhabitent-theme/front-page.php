@@ -23,10 +23,10 @@ get_header(); ?>
                 <ul class="front-product-posts">
         <?php
             $args = array( 'post_type' => 'product-type');
-            $product_posts = get_terms( $args ); // returns an array of posts
+            $product_type = get_terms( $args ); // returns an array of posts
         ?>
         
-        <?php foreach ( $product_posts as $type ) : setup_postdata( $type ); ?>
+        <?php foreach ( $product_type as $type ) : setup_postdata( $type ); ?>
 
         <li>
               <div class="product-post-piece">
@@ -34,6 +34,7 @@ get_header(); ?>
                 <div class="taxonomy-types">
                  <div class="taxonomy-description">
                   <?php echo $type -> description; ?>
+                  <a class="text-uppercase" href ="<?php echo get_term_link($type); ?>"> <?php echo $type->name . ' Stuff ' ?> </a> 
                  </div>
                     
                  <div>
