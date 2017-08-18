@@ -948,6 +948,25 @@ h2 {
       font-family: "Novecentosanswide-Normal", sans-serif;
       font-weight: normal; }
 
+.text-uppercase {
+  background: #248a83;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: 14.4px;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .text-uppercase:hover {
+    background: #19625d;
+    color: white; }
+  .text-uppercase:visited {
+    color: white; }
+
 .front-product-posts {
   display: -ms-flexbox;
   display: flex; }
@@ -958,9 +977,11 @@ h2 {
     border: 1px solid #e1e1e1;
     border-top: 4px solid lightgray;
     margin-right: 10px; }
-  .front-product-posts .product-post-piece img {
-    height: 70px;
-    margin-top: 20px; }
+  .front-product-posts .product-post-piece {
+    padding-bottom: 20px; }
+    .front-product-posts .product-post-piece img {
+      height: 70px;
+      margin-top: 20px; }
 
 .taxonomy-description {
   padding: 10px;
@@ -985,13 +1006,14 @@ h2 {
       font-size: 1.3rem; }
       .front-blog-posts h3 a:hover {
         color: #2f1339; }
+  .front-blog-posts li:first-child .journal-thumbnail-wrapper img {
+    height: 247px; }
 
 .front-blog-details {
-  margin-left: 10px; }
+  margin-left: 10px;
+  margin-bottom: 15px; }
   .front-blog-details .entry-meta {
     font-size: 12px; }
-  .front-blog-details .byline {
-    display: none; }
 
 .comments-link a {
   color: white;
@@ -1182,37 +1204,53 @@ h2 {
 .post-navigation {
   display: none; }
 
-.post-type-archive-product .site-content, .post-type-archive-adventure .site-content, .tax-product-type .site-content {
+.post-type-archive-product .site-content,
+.post-type-archive-adventure .site-content,
+.tax-product-type .site-content {
   padding-top: 50px;
   max-width: 1120px;
   margin: 0 auto; }
 
-.post-type-archive-product .content-area, .post-type-archive-adventure .content-area, .tax-product-type .content-area {
+.post-type-archive-product .content-area,
+.post-type-archive-adventure .content-area,
+.tax-product-type .content-area {
   padding: 30px 0; }
 
-.post-type-archive-product .page-header, .post-type-archive-adventure .page-header, .tax-product-type .page-header {
+.post-type-archive-product .page-header,
+.post-type-archive-adventure .page-header,
+.tax-product-type .page-header {
   margin-bottom: 30px;
   padding-bottom: 30px;
   border-bottom: 1px dashed #c8c8c8; }
-  .post-type-archive-product .page-header h1, .post-type-archive-adventure .page-header h1, .tax-product-type .page-header h1 {
+  .post-type-archive-product .page-header h1,
+  .post-type-archive-adventure .page-header h1,
+  .tax-product-type .page-header h1 {
     font-size: 36px;
     margin-bottom: 0px;
     margin-top: 0px;
     border-bottom: none;
     text-align: center; }
-  .post-type-archive-product .page-header .flex-container-no-wrap, .post-type-archive-adventure .page-header .flex-container-no-wrap, .tax-product-type .page-header .flex-container-no-wrap {
+  .post-type-archive-product .page-header .flex-container-no-wrap,
+  .post-type-archive-adventure .page-header .flex-container-no-wrap,
+  .tax-product-type .page-header .flex-container-no-wrap {
     max-width: 400px;
     margin: 0 auto; }
-  .post-type-archive-product .page-header a, .post-type-archive-adventure .page-header a, .tax-product-type .page-header a {
+  .post-type-archive-product .page-header a,
+  .post-type-archive-adventure .page-header a,
+  .tax-product-type .page-header a {
     color: #248A83;
     text-decoration: none;
     text-transform: uppercase;
     font-family: "Novecentosanswide-Normal", sans-serif;
     font-size: 19px; }
-    .post-type-archive-product .page-header a:hover, .post-type-archive-adventure .page-header a:hover, .tax-product-type .page-header a:hover {
+    .post-type-archive-product .page-header a:hover,
+    .post-type-archive-adventure .page-header a:hover,
+    .tax-product-type .page-header a:hover {
       color: #2f1339; }
 
-.post-type-archive-product .product-types, .post-type-archive-adventure .product-types, .tax-product-type .product-types {
+.post-type-archive-product .product-types,
+.post-type-archive-adventure .product-types,
+.tax-product-type .product-types {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
@@ -1220,7 +1258,9 @@ h2 {
   list-style-type: none;
   padding-left: 0px; }
 
-.post-type-archive-product .flex-container, .post-type-archive-adventure .flex-container, .tax-product-type .flex-container {
+.post-type-archive-product .flex-container,
+.post-type-archive-adventure .flex-container,
+.tax-product-type .flex-container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-direction: row;
@@ -1228,16 +1268,22 @@ h2 {
   display: -ms-flexbox;
   display: flex; }
 
-.post-type-archive-product .flex-product-item, .post-type-archive-adventure .flex-product-item, .tax-product-type .flex-product-item {
+.post-type-archive-product .flex-product-item,
+.post-type-archive-adventure .flex-product-item,
+.tax-product-type .flex-product-item {
   width: 22.5%;
   margin: 12px;
   margin-bottom: 0px; }
 
-.post-type-archive-product .product-thumbnail, .post-type-archive-adventure .product-thumbnail, .tax-product-type .product-thumbnail {
+.post-type-archive-product .product-thumbnail,
+.post-type-archive-adventure .product-thumbnail,
+.tax-product-type .product-thumbnail {
   overflow: hidden;
   height: 250px;
   position: relative; }
-  .post-type-archive-product .product-thumbnail img, .post-type-archive-adventure .product-thumbnail img, .tax-product-type .product-thumbnail img {
+  .post-type-archive-product .product-thumbnail img,
+  .post-type-archive-adventure .product-thumbnail img,
+  .tax-product-type .product-thumbnail img {
     position: absolute;
     top: 50%;
     right: 50%;
@@ -1246,12 +1292,16 @@ h2 {
     width: auto;
     transform: translate(50%, -50%); }
 
-.post-type-archive-product .product-title-section, .post-type-archive-adventure .product-title-section, .tax-product-type .product-title-section {
+.post-type-archive-product .product-title-section,
+.post-type-archive-adventure .product-title-section,
+.tax-product-type .product-title-section {
   border: 1px solid #e1e1e1;
   margin-bottom: 10px;
   padding: 10px;
   border-top-width: 5px; }
-  .post-type-archive-product .product-title-section h2, .post-type-archive-adventure .product-title-section h2, .tax-product-type .product-title-section h2 {
+  .post-type-archive-product .product-title-section h2,
+  .post-type-archive-adventure .product-title-section h2,
+  .tax-product-type .product-title-section h2 {
     font-size: 16px;
     position: relative;
     text-align: center;
@@ -1259,12 +1309,16 @@ h2 {
     font-weight: normal;
     text-transform: none;
     letter-spacing: 0px; }
-    .post-type-archive-product .product-title-section h2 span:first-child, .post-type-archive-adventure .product-title-section h2 span:first-child, .tax-product-type .product-title-section h2 span:first-child {
+    .post-type-archive-product .product-title-section h2 span:first-child,
+    .post-type-archive-adventure .product-title-section h2 span:first-child,
+    .tax-product-type .product-title-section h2 span:first-child {
       position: absolute;
       left: 0;
       background-color: #ffffff;
       padding-right: 2px; }
-    .post-type-archive-product .product-title-section h2 span:last-child, .post-type-archive-adventure .product-title-section h2 span:last-child, .tax-product-type .product-title-section h2 span:last-child {
+    .post-type-archive-product .product-title-section h2 span:last-child,
+    .post-type-archive-adventure .product-title-section h2 span:last-child,
+    .tax-product-type .product-title-section h2 span:last-child {
       position: absolute;
       right: 0;
       top: 0;

@@ -34,11 +34,11 @@ get_header(); ?>
                 <div class="taxonomy-types">
                  <div class="taxonomy-description">
                   <?php echo $type -> description; ?>
-                  <a class="text-uppercase" href ="<?php echo get_term_link($type); ?>"> <?php echo $type->name . ' Stuff ' ?> </a> 
+                  
                  </div>
                     
                  <div>
-                    <p class="button"><?php echo $type -> name; ?> Stuff</p>
+                    <a class="text-uppercase" href ="<?php echo get_term_link($type); ?>"> <?php echo $type->name . ' Stuff ' ?> </a> 
                  </div> 
                     <!--Use concatenated url to load the picture!-->
                 </div>
@@ -71,11 +71,11 @@ get_header(); ?>
             </div>
             <div class="front-blog-details">
             <div class="entry-meta">
-                <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+                <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
             </div><!-- .entry-meta -->
             
-        <h3><a href="<? echo get_post_permalink() ?>"><?php the_title(); ?></a></h3>
-        <!--<p><?php the_content(); ?></p>-->
+        <h3><a href="<? echo get_post_permalink() ?>"><?php the_title(); ?></h3>
+        <button class="black-button">Read Entry</button></a>
         </div>
        </div>
     
