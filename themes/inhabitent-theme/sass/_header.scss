@@ -19,26 +19,14 @@
     margin-left: 30px;
 }
 
-.home {
-    #primary-menu {
-        li {
-            &:hover>a,
-            &:focus>a {
-                color: #f0e4d1;
-            }
-        }
-    }
-}
-
 .menu {
     li a {
         font-family: $font__accent;
         text-transform: uppercase;
-        color: $green-brand-color;
+        color: $green_brand_color;
         font-size: 16px;
-        font-weight: 400;
         &:hover {
-            color: $orange_brand_color;
+            color: $purple_brand_color;
         }
     }
 }

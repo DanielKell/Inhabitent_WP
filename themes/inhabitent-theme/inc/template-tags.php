@@ -136,7 +136,7 @@
  				<div class="comment-meta">
  					<div class="comment-author vcard">
  						<?php printf( '<cite class="fn">%s</cite>', get_comment_author() ); ?>
- 					</div> .comment-author 
+ 					</div>
 
  					<div class="comment-metadata">
  						<time datetime="<?php comment_time( 'c' ); ?>">
