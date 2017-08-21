@@ -38,9 +38,10 @@ get_header(); ?>
                  </div>
                     
                  <div>
+
                     <a class="text-uppercase" href ="<?php echo get_term_link($type); ?>"> <?php echo $type->name . ' Stuff ' ?> </a> 
+
                  </div> 
-                    <!--Use concatenated url to load the picture!-->
                 </div>
               </div>
         
@@ -75,7 +76,11 @@ get_header(); ?>
             </div><!-- .entry-meta -->
             
         <h3><a href="<? echo get_post_permalink() ?>"><?php the_title(); ?></h3>
-        <button class="black-button">Read Entry</button></a>
+
+        <!--<button class="black-button">Read Entry</button></a>-->
+
+        <button class="black-button front-page-button">Read Entry</button></a>
+        <!--<p><?php the_content(); ?></p>-->
         </div>
        </div>
     
