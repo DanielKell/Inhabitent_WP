@@ -3,15 +3,7 @@
 --------------------------------------------------------------*/
 
 
-/* Front page */
-
-.blog {
-    #primary {
-        //background-color: lightblue;
-    }
-    .footer {}
-    .class-blog {}
-}
+/* Global styling of page sizes */
 
 .content-area {
     width: 100%;
@@ -32,6 +24,8 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
     display: flex;
     margin: auto;
 }
+
+/* Front page styling */
 
 .custom-hero {
     //hero banner image
@@ -60,43 +54,6 @@ h2 {
     }
 }
 
-//Styling for contact form
-.wpcf7-form, .comment-form {
-    p {
-        label {
-            font-family: $font__accent;
-            text-transform: uppercase;
-            span {
-                color: $orange_brand_color;
-            }
-        }
-    }
-}
-
-.wpcf7-form-control,  .comment-form p input, .comment-form p textarea {
-    background-color: rgb(244, 244, 244);
-}
-
-.comment-form {
-    .form-submit {
-        input {
-            background-color: $green_brand_color;
-        }
-    
-    }
-    .comment-form-url {
-        input {
-        width: 697px;
-        }
-    }
-}
-
-.wpcf7-submit,
-.submit {
-    @include green-button;
-}
-
-//Front page styling
 .home-hero-banner {
     height: 100vh;
     background: linear-gradient(180deg, rgba(0, 0, 0, .4) 0, rgba(0, 0, 0, .4)), #969696 url(../../Inhabitent-site/images/home-hero.jpg) no-repeat top;
@@ -127,100 +84,7 @@ h2 {
     }
 }
 
-//TAXONOMY PRODUCT SECTION
-.front-product-posts {
-    display: flex;
-    li {
-        list-style-type: none;
-        flex: 0 1 25%;
-        border: $base__border-solid;
-        border-top: 4px solid lightgray;
-        margin-right: 10px;
-        &:hover {
-            border-color: $orange_brand_color;
-        }
-    }
-    .product-post-piece {
-
-        padding-bottom: 20px;
-
-            padding-bottom: 20px;
-
-        img {
-            height: 70px;
-            margin-top: 20px;
-        }
-    }
-}
-
-.taxonomy-description {
-    padding: 10px;
-    text-align: center;
-}
-
-//BLOG POST SECTION
-.front-blog-posts {
-    display: flex;
-    list-style-type: none;
-    li {
-        flex: 0 1 32%;
-        margin-left: 10px;
-        margin-right: 10px;
-        border: $base__border-solid;
-    }
-    h3 {
-        margin-top: 0px;
-        a {
-            color: $green_brand_color;
-            text-decoration: none;
-            font-family: 'Novecentosanswide-DemiBold';
-            font-size: 1.3rem;
-            &:hover {
-                color: $purple_brand_color;
-            }
-        }
-    }
-    li:first-child {
-        .journal-thumbnail-wrapper {
-            img {
-                height: 247px;
-            }
-        }
-    }
-}
-
-.front-blog-details {
-    margin-left: 10px;
-    margin-bottom: 15px;
-    .entry-meta {
-        font-size: 12px;
-    }
-}
-
-.comments-link {
-    a {
-        color: white;
-        text-decoration: none;
-        &:hover {
-            color: $yellow_brand_color;
-        }
-    }
-}
-
-.journal-thumbnail-wrapper {
-    img {
-        border-bottom: 5px solid lightgray;
-        height: 100%;
-    }
-}
-
-.product-info-container,
-.recent-blog-entries h2,
-.adventures-container h2 {
-    text-align: center;
-}
-
-//Styling the Latest Adventures on Front Page
+/* Latest Adventures on Front Page */
 .adventures-container {
     p {
         margin-top: 20px;
@@ -307,7 +171,139 @@ h2 {
     @include green-button;
 }
 
-//Styling the Journal
+/* Taxonomy Product Section Styling */
+
+.front-product-posts {
+    display: flex;
+    li {
+        list-style-type: none;
+        flex: 0 1 25%;
+        border: $base__border-solid;
+        border-top: 4px solid lightgray;
+        margin-right: 10px;
+        &:hover {
+            border-color: $orange_brand_color;
+        }
+    }
+    .product-post-piece {
+
+        padding-bottom: 20px;
+
+            padding-bottom: 20px;
+
+        img {
+            height: 70px;
+            margin-top: 20px;
+        }
+    }
+}
+
+.taxonomy-description {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Blog Section Styling */
+.front-blog-posts {
+    display: flex;
+    list-style-type: none;
+    li {
+        flex: 0 1 32%;
+        margin-left: 10px;
+        margin-right: 10px;
+        border: $base__border-solid;
+    }
+    h3 {
+        margin-top: 0px;
+        a {
+            color: $green_brand_color;
+            text-decoration: none;
+            font-family: 'Novecentosanswide-DemiBold';
+            font-size: 1.3rem;
+            &:hover {
+                color: $purple_brand_color;
+            }
+        }
+    }
+    li:first-child {
+        .journal-thumbnail-wrapper {
+            img {
+                height: 247px;
+            }
+        }
+    }
+}
+
+.front-blog-details {
+    margin-left: 10px;
+    margin-bottom: 15px;
+    .entry-meta {
+        font-size: 12px;
+    }
+}
+
+.comments-link {
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: $yellow_brand_color;
+        }
+    }
+}
+
+.journal-thumbnail-wrapper {
+    img {
+        border-bottom: 5px solid lightgray;
+        height: 100%;
+    }
+}
+
+.product-info-container,
+.recent-blog-entries h2,
+.adventures-container h2 {
+    text-align: center;
+}
+
+/* Contact Form Styling */
+.wpcf7-form, .comment-form {
+    p {
+        label {
+            font-family: $font__accent;
+            text-transform: uppercase;
+            span {
+                color: $orange_brand_color;
+            }
+        }
+    }
+}
+
+.wpcf7-form-control,  .comment-form p input, .comment-form p textarea {
+    background-color: rgb(244, 244, 244);
+}
+
+.comment-form {
+    .form-submit {
+        input {
+            background-color: $green_brand_color;
+        }
+    
+    }
+    .comment-form-url {
+        input {
+        width: 697px;
+        }
+    }
+}
+
+.wpcf7-submit,
+.submit {
+    @include green-button;
+}
+
+
+
+/* Journal Page Styling */
 .entry-content {
     margin-bottom: 50px;
 }
@@ -356,7 +352,7 @@ h2 {
     }
 }
 
-//Styling the individual journal pages
+/* Individual Journal Page Styling */
 .cat-links,
 .tags-links {
     margin-right: 20px;
@@ -387,7 +383,7 @@ h2 {
     display: none;
 }
 
-//Styling the comments
+/*Styling the Comments Section */
 .comment-list {
     padding-left: 0px;
 }
@@ -425,7 +421,7 @@ h2 {
     }
 }
 
-//Styling the Shop and taxonomy-type pages
+/* Styling the Shop and Taxonomy-type pages */
 .post-type-archive-product,
 .post-type-archive-adventure,
 .tax-product-type {
@@ -523,7 +519,7 @@ h2 {
     }
 }
 
-//Styling the individual Shop Items
+/* Styling the Individual Shop Items */
 .individual-product-page {
     display: flex;
     width: 1120px;
@@ -547,7 +543,7 @@ h2 {
     }
 }
 
-//Buttons!
+/* Styling Buttons! */
 .white-button {
     @include white-button;
 }
@@ -567,9 +563,8 @@ h2 {
     }
 }
 
+/* Styling the About Page */
 .post-5 {
-    //Formatting for About page
-
     .entry-header {
         margin-top: 0px;
     }
@@ -592,7 +587,7 @@ h2 {
 }
 
 
-//Syling the Find Us page
+/*Styling the Find Us page*/
 .post-7 {
     h2 {
         font-size: 33px;
@@ -610,7 +605,7 @@ h2 {
     }
 }
 
-//Styling the Archive pages (Month archive/Tag/Category)
+/*Styling the Archive pages (Month archive/Tag/Category) */
 .page-title {
     font-size: 38px;
     font-family: 'Novecentosanswide-DemiBold';
@@ -618,7 +613,7 @@ h2 {
     padding: 25px 0px;
 }
 
-//Styling the Search Results Page
+/*Styling the Search Results Page */
 .search-results {
     .entry-header {
         .entry-title {
@@ -657,7 +652,7 @@ h2 {
     }
 }
 
-//Styling the 404 page
+/*Styling the 404 page*/
 .error-404 {
     padding-bottom: 50px;
     h1 {
