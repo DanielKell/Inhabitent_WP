@@ -1,3 +1,6 @@
-# RED Functionality Plugin
+A WordPress plugin for the theme of the Inhabitent Camping Supply Co. Website.
 
-A template for a WordPress functionality plugin for RED Academy students.
+Includes:
+A custom post type for “Products” inside of a functionality plugin
+A custom taxonomy for “Product Type” inside of a functionality plugin
+A custom post type for “Adventures” inside of a functionality plugin
