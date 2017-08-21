@@ -672,8 +672,10 @@ a {
 #secondary {
   width: 30%;
   padding-left: 50px;
-  border-left: 1px solid #e1e1e1;
-  margin-top: 30px; }
+  padding-top: 30px;
+  border-left: 1px solid #e1e1e1; }
+  #secondary aside {
+    padding-bottom: 20px; }
 
 .day-of-week {
   font-family: 'Merriweather-Bold'; }
@@ -896,14 +898,39 @@ h2 {
   font-size: 24px;
   font-family: 'Novecentosanswide-DemiBold'; }
 
-.wpcf7-form p label {
+.page-id-42 .text-uppercase {
+  background: #248a83;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: 14.4px;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .page-id-42 .text-uppercase:hover {
+    background: #19625d;
+    color: white; }
+  .page-id-42 .text-uppercase:visited {
+    color: white; }
+
+.wpcf7-form p label, .comment-form p label {
   font-family: "Novecentosanswide-Normal", sans-serif;
   text-transform: uppercase; }
-  .wpcf7-form p label span {
+  .wpcf7-form p label span, .comment-form p label span {
     color: #d99054; }
 
-.wpcf7-form-control {
+.wpcf7-form-control, .comment-form p input, .comment-form p textarea {
   background-color: #f4f4f4; }
+
+.comment-form .form-submit input {
+  background-color: #248A83; }
+
+.comment-form .comment-form-url input {
+  width: 697px; }
 
 .wpcf7-submit,
 .submit {
@@ -947,25 +974,6 @@ h2 {
       margin-top: 50px;
       font-family: "Novecentosanswide-Normal", sans-serif;
       font-weight: normal; }
-
-.text-uppercase {
-  background: #248a83;
-  border: none;
-  border-radius: 0;
-  color: #fff;
-  cursor: pointer;
-  font-family: Novecento Sans Web,sans-serif;
-  font-size: 14.4px;
-  font-size: .9rem;
-  line-height: 1;
-  padding: .75rem 1.5rem;
-  text-decoration: none;
-  text-transform: uppercase; }
-  .text-uppercase:hover {
-    background: #19625d;
-    color: white; }
-  .text-uppercase:visited {
-    color: white; }
 
 .front-product-posts {
   display: -ms-flexbox;
@@ -1065,7 +1073,8 @@ h2 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .adventure-boxes li {
-    list-style: none; }
+    list-style: none;
+    background-position: top; }
     .adventure-boxes li h3 {
       color: white;
       font-family: "Merriweather-Light", sans-serif;
@@ -1132,6 +1141,7 @@ h2 {
   margin-bottom: 50px; }
 
 .entry-header {
+  margin-top: 40px;
   position: relative; }
   .entry-header .entry-title {
     position: absolute;
@@ -1206,6 +1216,32 @@ h2 {
 
 .post-navigation {
   display: none; }
+
+.comment-list {
+  padding-left: 0px; }
+
+.comment-body {
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 30px 0px; }
+  .comment-body .comment-author-avatar {
+    margin-right: 25px; }
+
+.comment-author .fn {
+  font-style: normal;
+  font-family: 'Merriweather-Bold'; }
+
+.comment-metadata time {
+  color: #808080; }
+
+.comment-metadata a {
+  color: #248A83;
+  text-decoration: none; }
+
+.reply a {
+  color: #248A83;
+  text-decoration: none; }
 
 .post-type-archive-product .site-content,
 .post-type-archive-adventure .site-content,
@@ -1388,6 +1424,9 @@ h2 {
     font-family: 'Novecentosanswide-Normal';
     margin-left: 5px; }
 
+.post-5 .entry-header {
+  margin-top: 0px; }
+
 .post-5 .custom-hero h1 {
   position: inherit;
   background-color: transparent; }
@@ -1420,7 +1459,8 @@ h2 {
 
 .search-results .entry-header .entry-title {
   position: inherit;
-  background-color: transparent; }
+  background-color: transparent;
+  padding-left: 0px; }
   .search-results .entry-header .entry-title a {
     color: #248A83; }
 

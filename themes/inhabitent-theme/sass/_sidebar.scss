@@ -2,8 +2,13 @@
 #secondary {
   width: 30%;
   padding-left: 50px;
+  padding-top: 30px;
   border-left: $base__border-solid;
-  margin-top: 30px;
+
+  aside {
+      padding-bottom: 20px;
+  }
+
 }
 
 .day-of-week {

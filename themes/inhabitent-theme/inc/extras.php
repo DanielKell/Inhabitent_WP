@@ -106,6 +106,7 @@ add_filter( 'get_the_archive_title', 'inhabitent_archive_title' );
 function inhabitent_limit_archive_posts($query){
 	if ($query->is_archive) {
 		$query->set('posts_per_page', 16);
+		$query->set( 'order', 'ASC' );
     }
     return $query;
 }

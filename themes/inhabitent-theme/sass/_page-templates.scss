@@ -51,8 +51,17 @@ h2 {
     font-family: 'Novecentosanswide-DemiBold';
 }
 
+.page-id-42 {
+    .text-uppercase {
+        @include green-button;
+        &:visited {
+            color: white;
+        }
+    }
+}
+
 //Styling for contact form
-.wpcf7-form {
+.wpcf7-form, .comment-form {
     p {
         label {
             font-family: $font__accent;
@@ -64,8 +73,22 @@ h2 {
     }
 }
 
-.wpcf7-form-control {
+.wpcf7-form-control,  .comment-form p input, .comment-form p textarea {
     background-color: rgb(244, 244, 244);
+}
+
+.comment-form {
+    .form-submit {
+        input {
+            background-color: $green_brand_color;
+        }
+    
+    }
+    .comment-form-url {
+        input {
+        width: 697px;
+        }
+    }
 }
 
 .wpcf7-submit,
@@ -104,13 +127,6 @@ h2 {
     }
 }
 
-.text-uppercase {
-    @include green-button;
-    &:visited {
-        color: white;
-    }
-}
-
 //TAXONOMY PRODUCT SECTION
 .front-product-posts {
     display: flex;
@@ -120,7 +136,6 @@ h2 {
         border: $base__border-solid;
         border-top: 4px solid lightgray;
         margin-right: 10px;
-
         &:hover {
             border-color: $orange_brand_color;
         }
@@ -224,6 +239,7 @@ h2 {
     flex-wrap: wrap;
     li {
         list-style: none;
+        background-position: top;
         h3 {
             color: white;
             font-family: $font__main;
@@ -294,6 +310,7 @@ h2 {
 
 .entry-header,
 {
+    margin-top: 40px;
     position: relative;
     .entry-title {
         position: absolute;
@@ -364,6 +381,44 @@ h2 {
 .post-navigation {
     //Used to hide the next and previous posts on the individual journal pages
     display: none;
+}
+
+//Styling the comments
+.comment-list {
+    padding-left: 0px;
+}
+
+.comment-body {
+    display: flex;
+    border-bottom: $base__border-solid;
+    padding: 30px 0px;
+    .comment-author-avatar {
+        margin-right: 25px;
+    }
+}
+
+.comment-author {
+    .fn {
+        font-style: normal;
+        font-family: 'Merriweather-Bold';
+    }
+    }
+
+    .comment-metadata {
+        time {
+        color: $medium_grey_brand_color;
+        }
+        a {
+        color: $green_brand_color;
+        text-decoration: none;
+        }
+    }
+
+.reply {
+    a {
+        color: $green_brand_color;
+        text-decoration: none;
+    }
 }
 
 //Styling the Shop and taxonomy-type pages
@@ -503,6 +558,11 @@ h2 {
 
 .post-5 {
     //Formatting for About page
+
+    .entry-header {
+        margin-top: 0px;
+    }
+
     .custom-hero {
         h1 {
             position: inherit;
@@ -519,6 +579,7 @@ h2 {
         }
     }
 }
+
 
 //Syling the Find Us page
 .post-7 {
@@ -552,6 +613,7 @@ h2 {
         .entry-title {
             position: inherit;
             background-color: transparent;
+            padding-left: 0px;
             a {
                 color: $green_brand_color;
             }
