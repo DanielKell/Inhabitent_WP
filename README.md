@@ -1,21 +1,24 @@
-# RED Starter
+Description
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+Inhabitent is a multi-page hipster-blog & shop based website built using HTML, CSS, PHP, jQuery, and WordPress as a content management system. It is structured around a custom theme used to style the website, and includes a custom made plugin, as well as custom post types.
 
-## Installation
+Technologies Used:
 
-### 1. Download me (don't clone me!)
+GIT
+Google Chrome (& Dev tools)
+JQuery (https://jquery.com/)
+W3C CSS Validation Service (https://jigsaw.w3.org/css-validator/)
+W3C HTML Checker (https://validator.w3.org/nu/)
+SASS (http://sass-lang.com/)
+Visual Studio Code
 
-Then add me to your `wp-content` directory.
+Developer Dependencies:
 
-### 2. Rename the `redstarter` directory
+BrowserSync (https://www.browsersync.io/)
+Gulp
 
-Make sure that the theme directory name is project appropriate!
+Lessons Learned
 
-### 3. Install the dev dependencies
+Due to the large scope of this project, it was difficult at the beginning to grasp how all the pieces would fit together. Once the template hierarchy structure made sense it became easier to put all the bits in place. As this was the first project I've worked on that required a grasp of so many different files it was hard to manage, but after working with it for a while I picked up speed and got a thorough grasp of how everything worked together. 
 
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `inhabitent.dev` to the appropriate localhost URL).
+This project also required a large amount of CSS for styling across all the different templates and pages, so was a great mental exercise in working with positioning and coloring. I definitely feel much more adept and fast with CSS after this project.
