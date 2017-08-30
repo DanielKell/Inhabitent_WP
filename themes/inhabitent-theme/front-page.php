@@ -72,15 +72,12 @@ get_header(); ?>
             </div>
             <div class="front-blog-details">
             <div class="entry-meta">
-                <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+                <?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
             </div><!-- .entry-meta -->
             
-        <h3><a href="<? echo get_post_permalink() ?>"><?php the_title(); ?></h3>
-
-        <!--<button class="black-button">Read Entry</button></a>-->
+        <h3><a href="<?php echo get_post_permalink() ?>"><?php the_title(); ?></h3>
 
         <button class="black-button front-page-button">Read Entry</button></a>
-        <!--<p><?php the_content(); ?></p>-->
         </div>
        </div>
     

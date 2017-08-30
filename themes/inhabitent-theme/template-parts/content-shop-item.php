@@ -19,7 +19,7 @@
 
 
 		<!--<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
+			<?php inhabitent_posted_on(); ?> / <?php inhabitent_comment_count(); ?> / <?php inhabitent_posted_by(); ?>
 		</div>-->
 	</header><!-- .entry-header -->
     </div>
@@ -39,7 +39,7 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php red_starter_entry_footer(); ?>
+		<?php inhabitent_entry_footer(); ?>
 		<div class="social-buttons">
 			<button class="black-button">
 				<i class="fa fa-facebook"> <span>Like</span>
