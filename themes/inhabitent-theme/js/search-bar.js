@@ -2,7 +2,7 @@
 
   $(document).ready(function() {
       
-    $('.icon-search').click(function(){
+    $('.main-navigation .icon-search').click(function(){
         $('.main-navigation .search-field').toggle('fast');
         $('.main-navigation .search-field').focus();
         return false;

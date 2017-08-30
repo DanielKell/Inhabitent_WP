@@ -225,10 +225,10 @@ h2 {
             }
         }
     }
-    li:first-child {
+    li {
         .journal-thumbnail-wrapper {
             img {
-                height: 247px;
+                max-height: 247px;
             }
         }
     }
@@ -317,8 +317,7 @@ h2 {
         top: 0px;
         background-color: #248a83;
         color: #fff;
-        font-size: 33.6px;
-        font-size: 2.1rem;
+        font-size: 2.5rem;
         left: 0;
         padding: .75rem 0rem;
         padding-left: 2rem;
@@ -570,6 +569,7 @@ h2 {
     }
 
     .custom-hero {
+        height: 100vh;
         h1 {
             position: inherit;
             background-color: transparent;
@@ -661,6 +661,10 @@ h2 {
     p {
         padding-bottom: 20px;
     }
+}
+
+.404-search-form {
+    background-color: blue;
 }
 
 .widget_recent_entries,

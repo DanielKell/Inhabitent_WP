@@ -1075,8 +1075,8 @@ h2 {
       font-size: 1.3rem; }
       .front-blog-posts h3 a:hover {
         color: #2f1339; }
-  .front-blog-posts li:first-child .journal-thumbnail-wrapper img {
-    height: 247px; }
+  .front-blog-posts li .journal-thumbnail-wrapper img {
+    max-height: 247px; }
 
 .front-blog-details {
   margin-left: 10px;
@@ -1146,8 +1146,7 @@ h2 {
     top: 0px;
     background-color: #248a83;
     color: #fff;
-    font-size: 33.6px;
-    font-size: 2.1rem;
+    font-size: 2.5rem;
     left: 0;
     padding: .75rem 0rem;
     padding-left: 2rem;
@@ -1450,9 +1449,11 @@ h2 {
 .post-5 .entry-header {
   margin-top: 0px; }
 
-.post-5 .custom-hero h1 {
-  position: inherit;
-  background-color: transparent; }
+.post-5 .custom-hero {
+  height: 100vh; }
+  .post-5 .custom-hero h1 {
+    position: inherit;
+    background-color: transparent; }
 
 .post-5 .entry-content {
   width: 850px;
@@ -1519,6 +1520,9 @@ h2 {
     border-bottom: none; }
   .error-404 p {
     padding-bottom: 20px; }
+
+.404-search-form {
+  background-color: blue; }
 
 .widget_recent_entries ul,
 .widget_categories ul {
